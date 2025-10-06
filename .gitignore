@@ -159,9 +159,11 @@ base/migrations/
 *.pdf
 *.txt
 
-# Не нужные документы
-*.docx
+# Не нужные файлы
+ТЗ.docx
+Отчет по проектному месяцу.docx
 *.docx#
+test.py
 
 # папка юпитера
 .ipynb_checkpoints/
