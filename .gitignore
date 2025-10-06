@@ -158,3 +158,10 @@ base/migrations/
 *.cmd
 *.pdf
 *.txt
+
+# Не нужные документы
+*.docx
+*.docx#
+
+# папка юпитера
+.ipynb_checkpoints/
