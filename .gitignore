@@ -167,3 +167,4 @@ test.py
 
 # папка юпитера
 .ipynb_checkpoints/
+datasets/
