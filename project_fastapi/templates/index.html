@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+   <body>
+     <label for="fileInput">Укажите фаил для обработки:</label>
+     <input type="file" id="fileInput" name="files" multiple><br>
+     <input type="button" value="Загрузить" onclick="submitUsingFetch()">
+      <p id="resp"></p>
+      <script>
+         function submitUsingFetch() {
+            const formData = new FormData();
+            formData.append('file', fileInput.files[0]);
+            fetch('/submits', { method: 'POST', body: formData })
+            .then(res => res.json())
+            .then(data => {
+                if (data.url)
+                    window.location.href = data.url;
+                })
+            .catch(err => console.error('Ошибка:', err));
+         }
+      </script>
+   </body>
+</html>

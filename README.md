@@ -1,33 +1,77 @@
 <div id="header" align="center">
-  <h1>Разработать модель для предсказания риска сердечного приступа</h1>
+  <h1>Predicting a heart attack</h1>
 </div>
 
 ## Описание проекта:
 
+> Представляем инновационное веб-приложение на базе современного фреймворка FastAPI, разработанное для автоматизации процесса анализа данных.
+> Ключевая функциональность приложения заключается в обработке CSV-файлов тестовых выборок через интуитивно понятный веб-интерфейс. Система обеспечивает эффективное взаимодействие посредством POST-запросов к серверу для выполнения предсказаний, что гарантирует высокую производительность и надежность работы.
+> Результаты анализа предоставляются в универсальном формате JSON, который экспортируется в виде готового файла. Такой подход обеспечивает:
++ Простоту использования для конечных пользователей;
++ Гибкость интеграции с другими системами;
++ Высокую скорость обработки данных;
++ Надёжность хранения и передачи информации.
+
 ## Cтек технологий:
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
-<img src="https://img.shields.io/badge/Seaborn_-0.13.2-green"><img src="https://img.shields.io/badge/Shap_-0.44.0-green"><img src="https://img.shields.io/badge/Phik_-0.12.4-green">
+<img src="https://img.shields.io/badge/Scikit--Learn:_-1.6.1-purple">
+<img src="https://img.shields.io/badge/Pandas:_-2.2.3-slategrey">
+<img src="https://img.shields.io/badge/Python:_-3.13.0-greem">
+<img src="https://img.shields.io/badge/FastAPI:_-0.119.0-green">
+<img src="https://img.shields.io/badge/Uvicorn:_-0.37.0-red">
+<img src="https://img.shields.io/badge/Poetry:_-2.0.0-blue">
 
-## Используемые модели:
+## Как развернуть проект на локальной машине:
 
-## Цели иследования:
 
-## Описание данных:
+### 1. Клонируем проект:
+```
+git clone git@github.com:OsKaLis/predictions_of_heart_attack_risk.git
+```
+### 2. Переходим в директорию проекта:
+```
+cd predictions_of_heart_attack_risk/
+```
+### 3. Необходимо проверить установленную версию Python:
+```
+python3 -V
+```
+- Если у вас версия 3.13.*, то можно переходить к шагу 4.
+- Если версия не 3.13.*, то необходимо её установить.
+### 4. Устанвка `poetry`:
+```
+pip install poetry
+```
+- [Не большое руководство по `poetry`](https://habr.com/ru/articles/740376/)
+### 5. Проверка что `poetry` установлен:
+```
+poetry -V
+```
+### 6. Запускаем виртуальное окружение из папки "predictions_of_heart_attack_risk":
+``` 
+poetry shell
+```
+### 7. Устанавливаем установка зависимости для окружения:
+```
+poetry install
+```
+### 8. Переходим в директорию проекта:
+```
+cd project_fastapi/
+```
+### 9. Запускаем проекта локально: 
+```
+poetry run uvicorn main:app --reload
+```
 
-`Предоставили следующие данные датасетами:`
-  
-* Файл `market_file.csv` — Таблица, которая содержит данные о поведении покупателя на сайте, о коммуникациях с покупателем и его продуктовом поведении.
+## Демонстрация работы:
+### Стартовая страница
+![Интерфейс программы GEryCH](https://github.com/OsKaLis/GEryCH/blob/8a9c36c2ccee63d744fd8acadb5bfd511656c791/images/GEryCH.png)
+### Выбор файла
+![Интерфейс программы GEryCH](https://github.com/OsKaLis/GEryCH/blob/8a9c36c2ccee63d744fd8acadb5bfd511656c791/images/GEryCH.png)
+### После нажатия на кнопру [Загрузить]
+![Интерфейс программы GEryCH](https://github.com/OsKaLis/GEryCH/blob/8a9c36c2ccee63d744fd8acadb5bfd511656c791/images/GEryCH.png)
 
-| Поле  | Описание поля |
-| --- | --- |
-| `id` | номер покупателя в корпоративной базе данных.|
-| `Прибыль` | значение прибыли.|
+## Сылка на документацию:
+http://127.0.0.1:8000/docs
 
-## Что было сделали для поиска лучшей модели:
-
-## Лучшая модель и её параметры:
-
+## Автор: Юшко Ю.Ю.
