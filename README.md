@@ -63,6 +63,42 @@ cd project_fastapi/
 poetry run uvicorn main:app --reload
 ```
 
+## Инструкция по работе с приложением
+> 1. Запускаем приложение из папки (project_fastapi) - [ poetry run uvicorn main:app --reload ]
+> 2. Выбираем фаил в формате (*.csv) с полями:
+
+| Порядковый № | Поле                                 | Значение |
+|--------------|--------------------------------------|-------|
+| 1            | Age                                  | Возраст |
+| 2            | Cholesterol                         | Показатель холестерина |
+| 3            | Heart rate                           | Частота сердцебиения |
+| 4            | Diabetes                        | Диабет                              |
+| 5            | Family History                  | Семейная история                    |
+| 6            | Smoking                         | Курение                             |
+| 7            | Obesity                         | Ожирение                            |
+| 8            | Alcohol Consumption             | Употребление алкоголя               |
+| 9            | Exercise Hours Per Week         | Количество Часов упражнений в Неделю |
+| 10           | Diet                            | Диета                               |
+| 11           | Previous Heart Problems         | Предыдущие проблемы с сердцем       |
+| 12           | Medication Use                  | Использование лекарств              |
+| 13           | Stress Level                    | Уровень стресса                     |
+| 14           | Sedentary Hours Per Day         | Часы Сидячего Образа Жизни В День   |
+| 15           | Income                          | Доход                               |
+| 16           | BMI                             | Индекс массы тела                   |
+| 17           | Triglycerides                   | Триглицериды                        |
+| 18           | Physical Activity Days Per Week | Дни физической активности в Неделю  |
+| 19           | Sleep Hours Per Day      | Количество Часов сна в Сутки        |
+| 20           | CK-MB                    | CK-MB                               |
+| 21           | Troponin                 | Тропонин                            |
+| 22           | Gender                   | Пол                                 |
+| 23           | Systolic blood pressure  | Систолическое кровяное давление     |
+| 24           | Diastolic blood pressure | Диастолическое кровяное давление    |
+| 25           | id      | Уникальный идентификатор клиента    |
+
+> 3. Нажать кнопку [ Загрузить ]
+> 4. Скачать готовый фаил с аброботкой результата 
+> 5. Если есть ещё файлы для обработки нажать [ Новый запрос ]
+
 ## Демонстрация работы:
 ### Стартовая страница
 ![Стартовый интерфейс](https://github.com/OsKaLis/predictions_of_heart_attack_risk/blob/ca14cff9bca2ed58b81815d4caad905aaefa2490/project_fastapi/img/index.png)
