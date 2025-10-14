@@ -10,7 +10,7 @@ templates = Jinja2Templates(directory='templates')
 
 FILE_TEMP: str = ''
 
-def make_prediction(file_name: str, file: object):
+def predict_the_risk(file_name: str, file: object):
     """!!!"""
     # обработка
     file.to_csv(FILE_TEMP, index=False)
@@ -31,12 +31,12 @@ def submits(file: UploadFile):
     global  FILE_TEMP
     FILE_TEMP = file.filename
     df = pd.read_csv(file.file)
-    make_prediction(file.filename, df)
+    predict_the_risk(file.filename, df)
     return {'url': '/result'}
 
 @app.get("/download")
 def download_file():
-    """Сылка на скачивание готового файла"""
+    """Эндпоинт на скачивание готового файла"""
     return FileResponse(
         path=FILE_TEMP,
         filename='предсказание.csv',

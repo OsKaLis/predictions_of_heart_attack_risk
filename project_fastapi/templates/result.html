@@ -1,8 +1,60 @@
 <!DOCTYPE html>
-<html>
-   <body>
-     <a href="/">Новый запрос</a><br>
-     <label>Скачать предсказание:</label>
-     <a href="/download">{{ file_name }}</a>
-   </body>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загрузка файла</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        input[type="file"], button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #367c39;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Предсказать риск сердечного приступа</h1>
+        <button id="uploadButton">Новый запрос</button>
+        <h3>Скачать предсказание:</h3>
+        <a href="/download">{{ file_name }}</a>
+    </div>
+    <script>
+        document.getElementById('uploadButton').addEventListener('click', function() {
+            const fileInput = document.getElementById('fileInput');
+            window.location.href = '/';
+        });
+    </script>
+</body>
 </html>
