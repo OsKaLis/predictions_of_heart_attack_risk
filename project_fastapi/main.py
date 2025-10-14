@@ -1,19 +1,15 @@
-import csv
 import pandas as pd
-from fastapi import FastAPI, Request, Depends, HTTPException, Response, status
-from fastapi.responses import HTMLResponse, FileResponse, RedirectResponse
+from fastapi import FastAPI, Request
+from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.templating import Jinja2Templates
-from fastapi.datastructures import FormData, UploadFile
+from fastapi.datastructures import UploadFile
+
+from predicting_attack import predict_the_risk
 
 app = FastAPI()
 templates = Jinja2Templates(directory='templates')
 
 FILE_TEMP: str = ''
-
-def predict_the_risk(file_name: str, file: object):
-    """!!!"""
-    # обработка
-    file.to_csv(FILE_TEMP, index=False)
 
 @app.get('/')
 def main(request: Request):

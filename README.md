@@ -65,13 +65,16 @@ poetry run uvicorn main:app --reload
 
 ## Демонстрация работы:
 ### Стартовая страница
-![Интерфейс программы GEryCH](https://github.com/OsKaLis/GEryCH/blob/8a9c36c2ccee63d744fd8acadb5bfd511656c791/images/GEryCH.png)
+![Стартовый интерфейс](https://github.com/OsKaLis/predictions_of_heart_attack_risk/blob/ca14cff9bca2ed58b81815d4caad905aaefa2490/project_fastapi/img/index.png)
 ### Выбор файла
-![Интерфейс программы GEryCH](https://github.com/OsKaLis/GEryCH/blob/8a9c36c2ccee63d744fd8acadb5bfd511656c791/images/GEryCH.png)
+![Выбор файла](https://github.com/OsKaLis/predictions_of_heart_attack_risk/blob/ca14cff9bca2ed58b81815d4caad905aaefa2490/project_fastapi/img/open_file.png)
 ### После нажатия на кнопру [Загрузить]
-![Интерфейс программы GEryCH](https://github.com/OsKaLis/GEryCH/blob/8a9c36c2ccee63d744fd8acadb5bfd511656c791/images/GEryCH.png)
+![Получение результата](https://github.com/OsKaLis/predictions_of_heart_attack_risk/blob/ca14cff9bca2ed58b81815d4caad905aaefa2490/project_fastapi/img/result.png)
 
 ## Сылка на документацию:
+```
 http://127.0.0.1:8000/docs
+```
+![Информация по эндпоинтам](https://github.com/OsKaLis/predictions_of_heart_attack_risk/blob/ca14cff9bca2ed58b81815d4caad905aaefa2490/project_fastapi/img/help.png)
 
 ## Автор: Юшко Ю.Ю.
